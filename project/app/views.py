@@ -7,3 +7,9 @@ def register(request):
 def registerdata(request):
     print(request.method)
     print(request.POST)
+    name=request.POST.get('firstname')
+    lname=request.POST.get('lastname')
+    email=request.POST.get('email')
+    password=request.POST.get('password')
+    print(name,lname,email,password)
+    
